@@ -11,16 +11,26 @@ a, li {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
 }
 
-header a, header li {
+.header a, header li {
     color: white;
 }
 
 header {
     display: flex;
-    flex: 1;
+    flex-direction: column;
+    flex: 1 1 100px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.header {
+    display: flex;
+    flex: 0 0 75px;
     justify-content: space-around;
     align-items: center;
     background: #1f2937;
@@ -33,4 +43,97 @@ header ul {
     gap: 20px;
     font-size: 18px;
     font: white;
+}
+
+.banner {
+    display: flex;
+    flex: 1 1 500px;
+    padding: 0 100px;
+    justify-content: center;
+    align-items: center;
+    background: #1f2937;
+    height: 350px;
+    color: white;
+}
+
+.bannerLeft {
+    flex: 0 1 500px;
+    padding: 10px 75px;
+    min-width: 430px;
+}
+
+.bannerLeft button, .bannerLeft a {
+    padding: 10px;
+    margin-top: 10px;;
+    width: 125px;
+    color: black;
+    text-align: center;
+}    
+
+.bannerRight {
+    display: flex;
+    flex: 0 3 250px;
+    padding: 10px 75px;
+}
+
+.bannerRight img {
+    flex: 1 1 300px;
+    max-width: 400px;
+    border: 1px solid black;
+}
+
+.projectsContainer {
+    margin-bottom: 100px;
+}
+
+.projectsContainer h1 {
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 150px;
+}
+
+.projects a img {
+    max-width: 150px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.goalsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    background: #f5f5f5;
+}
+
+.goals {
+    width: 500px;
+}
+
+.goalsQuote {
+    width: 500px;
+    margin-bottom: 0;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.goalsQuoteAuthor {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background: #1f2937;
+    border-top: 1px solid rgb(0, 0, 0);
+    color: white;
 }
