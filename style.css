@@ -1,0 +1,36 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a, li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    margin: 0;
+}
+
+header a, header li {
+    color: white;
+}
+
+header {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    background: #1f2937;
+    font-size: 24px;
+    color: white;
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    font: white;
+}
