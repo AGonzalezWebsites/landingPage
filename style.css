@@ -15,10 +15,18 @@ h1 {
     font-family: Monospace;
 }
 
+p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
 body {
     display: flex;
     flex-direction: column;
     margin: 0;
+}
+
+.firstLink {
+    padding-right: 10px;
 }
 
 .header a, header li {
@@ -142,19 +150,20 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 0;
+    padding: 50px 0 75px 0;
     background: #e0e0e0;
 }
 
 .goals {
-    width: 500px;
+    justify-content: center;
+    display: flex;
 }
 
 .goalsQuote {
-    width: 500px;
+    flex: 0 1 900px;
     margin-bottom: 0;
-    font-size: 25px;
-    font-style: italic;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .goalsQuoteAuthor {
