@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--made this change to test on GitHub-->
+<html>
+
+<head>
+    <title>Company Notes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Karla|Muli|PT+Serif|Quicksand" rel="stylesheet">
+</head>
+
+<body style="margin:0;" class="content">
+
+    <div class="initialContainer">
+
+        <form class="animate-bottom" id="formSkip" action="/" method="GET">
+            <h1>Form validation Demo</h1>
+            <button>Skip form</button>
+        </form>
+
+        <form class="animate-bottom" id="form" action="/" method="GET">
+            <div>
+                <input id="name" name="name" type="text" placeholder="Name" required>
+            </div>
+            <div>
+                <input id="animal" name="name" type="text" placeholder="First animal that comes to mind?" required>
+            </div>
+            <div>
+                <input id="email" name="email" type="email" placeholder="Email" required>
+            </div>
+            <div>
+                <input id="email2" name="email" type="email" placeholder="Confirm Email" required>
+            </div>
+            <div>
+                <input id="password" name="password" type="password" placeholder="Password" required>
+            </div>
+            <button type="submit">Submit</button>
+            <div id="error" style="color:red;"></div>
+        </form>
+        
+
+        
+    </div>
+
+    <div class="mainWrap">
+        <div class="wrapper">
+
+            <!---- Logo ---->
+            <div class="logo">
+                <a href="index.html">
+                    <h4>Company Notes</h4>
+                </a>
+            </div>
+
+            <!---- END Logo ---->
+            <!---- Mini Bar ---->
+
+
+
+            <!---- END Mini Bar ---->
+            <!---- Top Bar ---->
+
+            <div class="user">
+                <button id="openForm">Sign Up</button>
+                <div class="userInfoContainer">
+                    <div class="userInfoTitle">
+                        <h1>User</h1><i class="fas fa-angle-down"></i>
+                    </div>
+                    <p class="userInfoContent"></p>
+                </div>
+            
+            </div>
+
+            <!---- END Top Bar ---->
+            <!---- Top Body ---->
+
+            <div class="item1">
+                <ul class="links">
+
+                    <p class="topicTitle">Topic</p>
+                    <li id="item1Spacing">Hardware & Software</li>
+                    <li id="item1Spacing">Professional Products</li>
+                    <li id="item1Spacing">External Links</li>
+                </ul>
+            </div>
+
+            <!---- Left Menu Bar 2 ---->
+
+            <div class="item2">
+                <span class="user"></span>
+            </div>
+
+            <!---- END Left Menu Bar 2 ---->
+            <!---- Three Top Boxes ---->
+            <!---- Box A ---->
+
+            <div class="item3">
+                <section class="animate-bottom">
+                    <div class="contentBox">
+                        <h4>Select a <strong>TOPIC</strong> then <strong>PRODUCT TYPE</strong> to view details</h4>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!---- END Box A ---->
+
+    </div>
+
+    <script src="form.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

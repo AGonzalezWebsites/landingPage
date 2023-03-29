@@ -1,0 +1,896 @@
+/* fonts:
+  font-family: 'Trade Winds';
+  font-family: 'Lacquer';
+*/
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    transition: 1s;
+    background: rgb(31, 30, 25);
+}
+
+i.fas,
+i.fab,
+i.far {
+    color: black;
+    background: rgba(245, 244, 243, 0.89);
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 5px;
+}
+
+i.fas:hover,
+i.fab:hover,
+i.far:hover {
+    background: silver;
+    cursor: crosshair;
+}
+
+.fa-smile-beam {
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    color: black;
+    background: rgba(214, 207, 197, 0.658) !important;
+}
+
+h3 {
+    font-size: 12px;
+    margin: 0;
+    padding:0;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 15px;
+    margin: 5px;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 30px;
+}
+
+.instructions {
+  display: block;
+  position: relative;
+  width: 360px;
+  margin: 20px auto 0 auto;
+  padding: 20px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;;
+}
+
+.instructions>i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  height: 15px;
+  width: 17px;
+  margin: 5px;
+  border: 0px;
+}
+
+.instructions>h1 {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.instructions>p {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+}
+
+#toggleBackground {
+  display: none;
+  position: absolute;
+  bottom: 125px;
+  left: 181px;
+}
+
+#toggleBackground > i {
+  width: 20px;
+  height: 15px;
+  text-align: center;
+  padding: 2px;
+  background: rgba(214, 207, 197, 0.658) !important;
+}
+
+.playArea {
+    display: block;
+    position: relative;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    top: 5%;
+    height: 500px;
+    width: 400px;
+    background: -webkit-linear-gradient(to top, #FFFFFF, #bbbbbb);
+    background: -moz-linear-gradient(to top, #FFFFFF, #bbbbbb);
+    background: linear-gradient(to top, rgb(214, 207, 197), #ffffff);
+    border: 3px dotted black;
+    border-radius: 5px;
+    z-index: 0;
+    overflow: hidden;
+}
+
+#playArea {
+  background: #FFFFFF;
+}
+
+#placeHolder {
+  display: inline;
+  opacity: .9;
+  filter: blur(.7px) grayscale(80%);
+}
+
+.playArea > img {
+    display: none;
+    position: absolute;
+    left: 0px;
+    height: 380px;
+    width: 100%;
+    position: 0;
+    border-bottom: 2px inset black;
+    z-index: -1;
+}
+
+.inventoryContainer {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: white;
+  margin-left: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: 1s;
+  filter: grayscale(70%);
+}
+
+#inventoryAnimateIn {
+  animation: inventoryAnimation .1s linear;
+  display: none;
+  margin-left: 0% !important;
+  background: rgb(150, 98, 50);
+  transition: 1s;
+  opacity: 1 !important;
+}
+
+.inventoryContainer > i {
+  position: absolute;
+
+}
+
+#inventoryBackground {
+  display: inline-block;
+  position: absolute;
+  width: 110%;
+  height: 100%;
+  z-index: -1;
+}
+
+#inventoryToggleButton {
+  background: rgba(255, 255, 255, 0);
+  border: 0;
+  font-size: 70px;
+  height: 70px;
+  width: 70px;
+  padding: 10px;
+  margin-bottom: 15px;
+  bottom: 0px;
+  left: 28px;
+}
+
+#inventoryItems {
+  font-family: 'Trade Winds';
+  border-collapse: collapse;
+  width: 80%;
+  margin: 15% 6% 15% 13%;
+  z-index: 4;
+  filter: grayscale(50%);
+}
+
+#inventoryItems td, #inventoryItems th {
+  border: 1px solid black;
+  height: 75px;
+  padding: 5px;
+  text-align: center;
+}
+
+#inventoryItems tr:nth-child(even){background-color: #f2f2f260;}
+
+#inventoryItems th {
+  text-align: center;
+  background-color: rgb(116, 108, 73);
+}
+
+#smallerColumn {
+  width: 50px !important;
+}
+
+#smallerColumn {
+  width: 100px !important;
+}
+
+#inventoryItems i {
+    height: 50px;
+    width: 50px;
+    padding-top: 7px;
+    font-size: 40px;
+    background: rgba(0, 0, 0, 0);
+    display: inline-block;
+    color: black;
+    border: 0px solid black;
+}
+
+/* Inventory Icons Inventory Icons Inventory Icons Inventory Icons Inventory Icons*/
+
+
+
+
+
+/* Inventory Icons END Inventory Icons END Inventory Icons END Inventory Icons END*/
+
+
+
+.topBox {
+    display: block;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 10px 0 10px;
+    height: 200px;
+    background: rgba(245, 244, 243, 0.70);
+    text-align: center;
+    font-family: 'Trade Winds';
+}
+
+#playerSubmit {
+    height: 40px;
+    width: 60px;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+#playerSubmit > input {
+          height: 100%;
+          width: 50%;
+          text-align: center;
+          margin: auto;
+          float: left;
+          font-size: 20px;
+      }
+
+#playerSubmit > button {
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    float: right;
+    font-size: 20px;
+}
+
+
+#face {
+    display: none;
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
+    color: black;
+    border: 0px solid black;
+}
+
+#playerInfo {
+    display: none;
+    position: absolute;
+    left: 48px;
+    top: 60px;
+}
+
+.playerLevelProgressContainer {
+  width: 300px;
+  height: 15px;
+  margin: 5px 0 8px 2px;
+  background-color: gray;
+  border-radius: 25px;
+  border: 1px inset black;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.playerLevelProgressContainer > h2 {
+  display: inline;
+  position: absolute;
+  left: 110px;
+  top: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#playerProgressInfo {
+  background: green;
+  height: 100%;
+  width: 0%;
+  border-radius: 25px 0 0 25px;
+}
+  
+  #textSpace {
+    margin-left: 20px;
+}
+
+#settingInfo {
+    display: none;
+    position: absolute;
+    left: 100px;
+    top: 140px;
+}
+
+.levelProgressContainer {
+    width: 200px;
+    height: 15px;
+    margin: 5px 0 8px 0;
+    background-color: gray;
+    border-radius: 25px;
+    border: 1px inset black;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.levelProgressContainer > h2 {
+    display: inline;
+    position: absolute;
+    left: 35px;
+    top: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#progressInfo {
+    background: green;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px 0 0 25px;
+}
+
+.dialogBox {
+    display: none;
+    position: absolute;
+    background: rgba(245, 244, 243, 0.70);
+    border: 1px solid black;
+    border-radius: 5px;
+    left: 12px;
+    top: 220px;
+    width: 375px;
+    height: 120px;
+    overflow: hidden;
+}
+
+#dialog {
+    position: absolute;
+    width: 360px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Lacquer';
+    font-size: 20px;
+    text-align: center;
+}
+
+#dialog > img {
+  position: relative;
+  width: 300px;
+  height: 70px;
+  border: 1px outset black;
+  border-radius: 5px;
+  z-index: -1;
+  margin: 0;
+  opacity: .8;
+}
+
+.initialNextBox {
+  display: none;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 399px;
+  bottom: 1px;
+  text-align: center;
+}
+
+.initialNextBox > i {
+  font-size: 70px;
+  height: 70px;
+  width: 70px;
+  padding: 10px;
+  margin-bottom: 15px;
+  display: inline-block;
+  color: black;
+  
+}
+
+#initialNextIcons {
+  display: none;
+}
+
+.nextBox {
+    display: block;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 399px;
+    bottom: 1px;
+    text-align: center;
+}
+
+.nextBox > i {
+    font-size: 50px;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+    color: black;
+    
+}
+
+#nextIcons {
+    display: none;
+}
+
+.nextLevelBox {
+  display: none;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 399px;
+  bottom: 1px;
+  text-align: center;
+}
+
+.nextLevelBox > i {
+  font-size: 50px;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: inline-block;
+  color: black;
+  
+}
+
+#nextLevelBox {
+  display: none;
+}
+
+.commandBoxAlways {
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    margin-left: auto;
+    margin-right: auto;
+    width: 399px;
+    height: 117px;
+    bottom: 0px;
+    text-align: center;
+    border: 3px dotted black;
+    background: rgb(77,75,110);
+    background: linear-gradient(90deg, rgba(77,75,110,1) 0%, rgba(62,62,62,1) 35%, rgba(58,82,87,1) 100%);
+    filter: grayscale(70%);
+  }
+
+.commandBox {
+    display: block;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 399px;
+    bottom: 1px;
+    text-align: center;
+}
+
+.commandBox > i {
+    font-size: 70px;
+    height: 70px;
+    width: 70px;
+    padding: 10px;
+    margin-bottom: 15px;
+    display: inline-block;
+    color: black;
+    
+}
+
+#commandIcons {
+    display: none;
+}
+
+.combatBox {
+    display: block;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 399px;
+    height: 117px;
+    bottom: 0px;
+    text-align: center;
+    z-index: 0;
+    border: 3px dotted black;
+    background: rgb(77,75,110);
+    background: linear-gradient(90deg, rgba(77,75,110,1) 0%, rgba(62,62,62,1) 35%, rgba(58,82,87,1) 100%);
+    filter: grayscale(70%);
+}
+
+.combatBox > i {
+    font-size: 50px;
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    background: rgb(246,246,246);
+  background: radial-gradient(circle, rgba(246,246,246,1) 0%, rgba(199,199,199,1) 100%);
+}
+
+#combatIcons {
+    display: none;
+}
+
+
+
+
+
+
+.inventoryAnimation{
+  animation: inventoryAnimation linear 1s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  -webkit-animation: inventoryAnimation linear 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: inventoryAnimation linear 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: inventoryAnimation linear 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: inventoryAnimation linear 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+}
+
+@keyframes inventoryAnimation{
+  0% {
+    transform:  translate(100px,0px)  ;
+  }
+  100% {
+    transform:  translate(0px,0px)  ;
+  }
+}
+
+@-moz-keyframes inventoryAnimation{
+  0% {
+    -moz-transform:  translate(100px,0px)  ;
+  }
+  100% {
+    -moz-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-webkit-keyframes inventoryAnimation {
+  0% {
+    -webkit-transform:  translate(100px,0px)  ;
+  }
+  100% {
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-o-keyframes inventoryAnimation {
+  0% {
+    -o-transform:  translate(100px,0px)  ;
+  }
+  100% {
+    -o-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-ms-keyframes inventoryAnimation {
+  0% {
+    -ms-transform:  translate(100px,0px)  ;
+  }
+  100% {
+    -ms-transform:  translate(0px,0px)  ;
+  }
+}
+
+
+
+
+
+
+.elementAnimation:focus {
+    animation: enemyAttack linear 4s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+    -webkit-animation: animationFrames linear 4s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-transform-origin: 50% 50%;
+    -moz-animation: animationFrames linear 4s;
+    -moz-animation-iteration-count: 1;
+    -moz-transform-origin: 50% 50%;
+    -o-animation: animationFrames linear 4s;
+    -o-animation-iteration-count: 1;
+    -o-transform-origin: 50% 50%;
+    -ms-animation: animationFrames linear 4s;
+    -ms-animation-iteration-count: 1;
+    -ms-transform-origin: 50% 50%;
+  }
+  
+  @keyframes enemyAttack{
+    0% {
+      transform:  translate(0px,-1px)  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+    10% {
+      transform:  translate(-2px,-5px)  rotate(3deg) scaleX(1.06) scaleY(1.08) ;
+    }
+    20% {
+      transform:  translate(-8px,-5px)  rotate(-8deg) scaleX(1.15) scaleY(1.13) ;
+    }
+    37% {
+      transform:  translate(-5px,-6px)  rotate(1deg) scaleX(1.16) scaleY(1.16) ;
+    }
+    46% {
+      transform:  translate(-2px,-3px)  rotate(-6deg) scaleX(1.17) scaleY(1.18) ;
+    }
+    54% {
+      transform:  translate(-7px,-1px)  rotate(-2deg) scaleX(1.17) scaleY(1.19) ;
+    }
+    64% {
+      transform:  translate(-13px,-7px)  rotate(2deg) scaleX(1.16) scaleY(1.16) ;
+    }
+    84% {
+      transform:  translate(-4px,-2px)  rotate(-1deg) scaleX(1.13) scaleY(1.10) ;
+    }
+    100% {
+      transform:  translate(0px,0px)  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+  }
+  
+  @-moz-keyframes enemyAttack{
+    0% {
+      -moz-transform:  translate(0px,-1px)  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+    10% {
+      -moz-transform:  translate(-2px,-5px)  rotate(3deg) scaleX(1.06) scaleY(1.08) ;
+    }
+    20% {
+      -moz-transform:  translate(-8px,-5px)  rotate(-8deg) scaleX(1.15) scaleY(1.13) ;
+    }
+    37% {
+      -moz-transform:  translate(-5px,-6px)  rotate(1deg) scaleX(1.16) scaleY(1.16) ;
+    }
+    46% {
+      -moz-transform:  translate(-2px,-3px)  rotate(-6deg) scaleX(1.17) scaleY(1.18) ;
+    }
+    54% {
+      -moz-transform:  translate(-7px,-1px)  rotate(-2deg) scaleX(1.17) scaleY(1.19) ;
+    }
+    64% {
+      -moz-transform:  translate(-13px,-7px)  rotate(2deg) scaleX(1.16) scaleY(1.16) ;
+    }
+    84% {
+      -moz-transform:  translate(-4px,-2px)  rotate(-1deg) scaleX(1.13) scaleY(1.10) ;
+    }
+    100% {
+      -moz-transform:  translate(0px,0px)  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+  }
+  
+  @-webkit-keyframes enemyAttack {
+    0% {
+      -webkit-transform:  translate(0px,-1px)  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+    10% {
+      -webkit-transform:  translate(-2px,-5px)  rotate(3deg) scaleX(1.06) scaleY(1.08) ;
+    }
+    20% {
+      -webkit-transform:  translate(-8px,-5px)  rotate(-8deg) scaleX(1.15) scaleY(1.13) ;
+    }
+    37% {
+      -webkit-transform:  translate(-5px,-6px)  rotate(1deg) scaleX(1.16) scaleY(1.16) ;
+    }
+    46% {
+      -webkit-transform:  translate(-2px,-3px)  rotate(-6deg) scaleX(1.17) scaleY(1.18) ;
+    }
+    54% {
+      -webkit-transform:  translate(-7px,-1px)  rotate(-2deg) scaleX(1.17) scaleY(1.19) ;
+    }
+    64% {
+      -webkit-transform:  translate(-13px,-7px)  rotate(2deg) scaleX(1.16) scaleY(1.16) ;
+    }
+    84% {
+      -webkit-transform:  translate(-4px,-2px)  rotate(-1deg) scaleX(1.13) scaleY(1.10) ;
+    }
+    100% {
+      -webkit-transform:  translate(0px,0px)  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+  }
+  
+  @-o-keyframes enemyAttack {
+    0% {
+      -o-transform:  translate(0px,-1px)  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+    10% {
+      -o-transform:  translate(-2px,-5px)  rotate(3deg) scaleX(1.06) scaleY(1.08) ;
+    }
+    20% {
+      -o-transform:  translate(-8px,-5px)  rotate(-8deg) scaleX(1.15) scaleY(1.13) ;
+    }
+    37% {
+      -o-transform:  translate(-5px,-6px)  rotate(1deg) scaleX(1.16) scaleY(1.16) ;
+    }
+    46% {
+      -o-transform:  translate(-2px,-3px)  rotate(-6deg) scaleX(1.17) scaleY(1.18) ;
+    }
+    54% {
+      -o-transform:  translate(-7px,-1px)  rotate(-2deg) scaleX(1.17) scaleY(1.19) ;
+    }
+    64% {
+      -o-transform:  translate(-13px,-7px)  rotate(2deg) scaleX(1.16) scaleY(1.16) ;
+    }
+    84% {
+      -o-transform:  translate(-4px,-2px)  rotate(-1deg) scaleX(1.13) scaleY(1.10) ;
+    }
+    100% {
+      -o-transform:  translate(0px,0px)  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+  }
+  
+  @-ms-keyframes enemyAttack {
+    0% {
+      -ms-transform:  translate(0px,-1px)  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+    10% {
+      -ms-transform:  translate(-2px,-5px)  rotate(3deg) scaleX(1.06) scaleY(1.08) ;
+    }
+    20% {
+      -ms-transform:  translate(-8px,-5px)  rotate(-8deg) scaleX(1.15) scaleY(1.13) ;
+    }
+    37% {
+      -ms-transform:  translate(-5px,-6px)  rotate(1deg) scaleX(1.16) scaleY(1.16) ;
+    }
+    46% {
+      -ms-transform:  translate(-2px,-3px)  rotate(-6deg) scaleX(1.17) scaleY(1.18) ;
+    }
+    54% {
+      -ms-transform:  translate(-7px,-1px)  rotate(-2deg) scaleX(1.17) scaleY(1.19) ;
+    }
+    64% {
+      -ms-transform:  translate(-13px,-7px)  rotate(2deg) scaleX(1.16) scaleY(1.16) ;
+    }
+    84% {
+      -ms-transform:  translate(-4px,-2px)  rotate(-1deg) scaleX(1.13) scaleY(1.10) ;
+    }
+    100% {
+      -ms-transform:  translate(0px,0px)  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+  }
+
+
+
+
+
+
+
+
+  .elementAnimation:focus {
+    animation: attacked linear 1s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+    -webkit-animation: animationFrames linear 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-transform-origin: 50% 50%;
+    -moz-animation: animationFrames linear 1s;
+    -moz-animation-iteration-count: 1;
+    -moz-transform-origin: 50% 50%;
+    -o-animation: animationFrames linear 1s;
+    -o-animation-iteration-count: 1;
+    -o-transform-origin: 50% 50%;
+    -ms-animation: animationFrames linear 1s;
+    -ms-animation-iteration-count: 1;
+    -ms-transform-origin: 50% 50%;
+  }
+  
+  @keyframes attacked{
+    0% {
+      transform:  translate(0px,0px)  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+    3% {
+      transform:  translate(2px,-2px)  rotate(3deg) scaleX(1.10) scaleY(1.10) ;
+    }
+    43% {
+      transform:  translate(0px,0px)  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+    100% {
+      transform:  translate(0px,0px)  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+  }
+  
+  @-moz-keyframes attacked{
+    0% {
+      -moz-transform:  translate(0px,0px)  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+    3% {
+      -moz-transform:  translate(2px,-2px)  rotate(3deg) scaleX(1.10) scaleY(1.10) ;
+    }
+    43% {
+      -moz-transform:  translate(0px,0px)  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+    100% {
+      -moz-transform:  translate(0px,0px)  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+  }
+  
+  @-webkit-keyframes attacked {
+    0% {
+      -webkit-transform:  translate(0px,0px)  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+    3% {
+      -webkit-transform:  translate(2px,-2px)  rotate(3deg) scaleX(1.10) scaleY(1.10) ;
+    }
+    43% {
+      -webkit-transform:  translate(0px,0px)  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+    100% {
+      -webkit-transform:  translate(0px,0px)  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+  }
+  
+  @-o-keyframes attacked {
+    0% {
+      -o-transform:  translate(0px,0px)  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+    3% {
+      -o-transform:  translate(2px,-2px)  rotate(3deg) scaleX(1.10) scaleY(1.10) ;
+    }
+    43% {
+      -o-transform:  translate(0px,0px)  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+    100% {
+      -o-transform:  translate(0px,0px)  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+  }
+  
+  @-ms-keyframes attacked {
+    0% {
+      -ms-transform:  translate(0px,0px)  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+    3% {
+      -ms-transform:  translate(2px,-2px)  rotate(3deg) scaleX(1.10) scaleY(1.10) ;
+    }
+    43% {
+      -ms-transform:  translate(0px,0px)  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+    100% {
+      -ms-transform:  translate(0px,0px)  rotate(0deg) scaleX(1.00) scaleY(1.00) ;
+    }
+  }

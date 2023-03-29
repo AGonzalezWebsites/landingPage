@@ -22,28 +22,28 @@ body {
 }
 
 .header a, header li {
-    color: white;
+    color: #e0e0e0;
 }
 
 .portfolio {
     font-size: 15px;
+    color: #ff983f;
 }
 
 header {
     display: flex;
     flex-direction: column;
     flex: 1 1 100px;
-    margin-bottom: 50px;
     border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .header {
     display: flex;
     flex: 0 0 50px;
-    padding: 0 50px;
+    padding: 50p 50px;
     justify-content: space-around;
     align-items: center;
-    background: #1f2937;
+    background: #1D1F21;
     font-size: 24px;
     color: white;
 }
@@ -55,14 +55,23 @@ header ul {
     font: white;
 }
 
+.banner h1 {
+    color: #ff983f;
+}
+
 .banner {
     display: flex;
     flex: 1 1 400px;
-    padding: 0 100px;
+    padding: 100px 100px 50px 100px;
     justify-content: center;
     align-items: center;
-    background: #1f2937;
+    background: #1D1F21;
     color: white;
+    overflow-y: hidden;
+}
+
+.bottomBanner {
+    padding-bottom: 150px;
 }
 
 .bannerLeft {
@@ -79,8 +88,12 @@ button:hover {
     height: 50px;
     margin-top: 10px;
     width: 125px;
-    color: black;
+    background-color: #FF6600;
+    color: #1D1F21;
+    font-size: 17px;
+    font-weight: bold;
     text-align: center;
+    border-radius: 10px;
 }
 
 .bannerRight {
@@ -92,16 +105,20 @@ button:hover {
 .bannerRight img {
     flex: 1 1 300px;
     max-width: 400px;
-    border: 1px solid black;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
 }
 
 .projectsContainer {
-    margin-bottom: 100px;
+    padding: 0px 0 100px 0;
+    background: #1D1F21;
+    color: white;
 }
 
 .projectsContainer h1 {
     text-align: center;
     margin-bottom: 75px;
+    color: #ff983f;
 }
 
 .projects {
@@ -117,12 +134,16 @@ button:hover {
     border: 1px solid black;
 }
 
+.gameImage {
+    filter: saturate(.7);
+}
+
 .goalsContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 0;
-    background: #f5f5f5;
+    padding: 50px 0;
+    background: #e0e0e0;
 }
 
 .goals {
@@ -146,7 +167,7 @@ button:hover {
 footer {
     display: flex;
     justify-content: center;
-    background: #1f2937;
+    background: #e0e0e0;
     border-top: 1px solid rgb(0, 0, 0);
-    color: white;
+    color: black;
 }

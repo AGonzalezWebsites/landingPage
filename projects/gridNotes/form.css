@@ -1,0 +1,46 @@
+.initialContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: white;
+    z-index: 99;
+    opacity: 1;
+    transition: .5s ease-in;
+    overflow-y: scroll;
+}
+
+.initialContainer input,.initialContainer h1,.initialContainer button {
+    margin: 0px 20px 40px 40px;
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.initialContainer input:hover {
+    margin: 0px 20px 30px 20px;
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: .1s;
+    border: 2px solid #2b4a7c;
+}
+
+.initialContainer h1 {
+    text-align: center;
+    font-size: 35px;
+    width: 400px;
+    background: #2b4a7c;
+    color: white;
+}
+
+#error {
+    text-align: center;
+    width: 400px;
+}
+

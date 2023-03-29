@@ -1,0 +1,292 @@
+/* Fonts we can use 
+font-family: 'Raleway', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Rock Salt', cursive;
+font-family: 'Trade Winds', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Sacramento', cursive;
+*/
+html {
+    --banner-font: 'Dancing Script', cursive;
+    --header-font: 'Dancing Script', cursive;
+    --budget-font: 'Playfair Display', serif;
+    /* --base-color: rgba(68, 56, 59, 0.486); */
+    --base-color: rgba(47, 89, 109, 0.596);
+    --sub-color: rgba(221, 217, 156, 0.925);
+}
+
+html {
+    transition: 3s smooth;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(34, 34, 34) !important;
+}
+
+body h1{
+    line-height: 1.4 !important;
+}
+
+body h2{
+    font-family: 'Playfair Display', serif;
+    line-height: 1.4 !important;
+}
+
+i:hover {
+    cursor: pointer;
+}
+.btn:hover {
+    cursor: pointer;
+}
+
+.status {
+    cursor: pointer;
+}
+
+#items>li {
+    cursor: grab;
+}
+
+#main-header {
+    background: var(--base-color);
+}
+
+#header-title {
+    background: var(--sub-color);
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: var(--banner-font);
+    border: 1px inset var(--sub-color);
+    box-shadow: rgba(49, 49, 49, 0.445) 0px 2px 10px 5px;
+}
+
+.fa-minus-square, .fa-plus-square {
+    display: inline;
+    position: absolute;
+    opacity: .7;
+    color: rgb(177, 177, 177);
+    font-size: 0px;
+    top: 0;
+    left: 0;
+    margin: 5px;
+}
+
+#budgetContainer {
+    position: relative;
+    height: auto;
+    padding: 40px 15px !important;
+    background: var(--base-color);
+    transition: height .4s !important;
+    transition-timing-function: ease;
+    overflow: hidden;
+}
+
+#budgetContainer i {
+    background: white !important;
+    opacity: 1;
+    border-radius: 5px;
+    padding: 0px 1px;
+    color: black;
+}
+
+#budgetContainer>h1 {
+    font-family: var(--budget-font);
+    font-size: 15px;
+    margin: 5px 0px;
+    padding: 10px 20px;
+    border: 1px inset silver;
+    box-shadow: rgba(49, 49, 49, 0.445) 0px 2px 10px 5px;
+}
+
+.budgetButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2px;
+}
+
+.budgetButtonContainer button {
+    margin-left: 5px;
+}
+
+#expensesTotal {
+    position: relative;
+    margin: 5px 0px;
+    border: 1px inset silver;
+    box-shadow: rgba(49, 49, 49, 0.445) 0px 2px 10px 5px;
+}
+
+#expensesTotal>h1 {
+    font-family: var(--budget-font);
+    font-size: 15px;
+    z-index: 1;
+    transition: .2s ease-in;
+}
+
+#expenseBar {
+    position: absolute;
+    background: rgba(167, 33, 33, 0.884) !important;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    transition: width 2s;
+    z-index: 0;
+    opacity: .7;
+}
+
+#budgetDifference {
+    position: relative;
+    margin: 5px 0px;
+    border: 1px inset silver;
+    box-shadow: rgba(49, 49, 49, 0.445) 0px 2px 10px 5px;
+}
+
+#budgetDifference>h1 {
+    font-family: var(--budget-font);
+    font-size: 15px;
+    z-index: 1;
+    transition: .2s ease-in;
+}
+
+#budgetBar {
+    position: absolute;
+    background: #28a745 !important;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: width 2s;
+    z-index: 0;
+    opacity: .8;
+}
+
+#submitActivityContainer {
+    background: var(--base-color);
+    position: relative;
+    padding: 30px 20px !important;
+}
+
+#submitActivityContainer>h1 {
+    background: var(--sub-color) !important;
+    font-family: var(--header-font);
+    color: black !important;
+    border: 1px inset var(--sub-color);
+    border-radius: 5px;
+    box-shadow: rgba(49, 49, 49, 0.445) 0px 2px 10px 5px;
+    background: rgb(245, 245, 245);
+    padding: 4px;
+    margin: 20px 0px 20px 0px;
+    font-size: 30px;
+}
+
+#ActivityContainer {
+    background: var(--base-color);
+    position: relative;
+    padding: 30px 15px !important;
+}
+
+#ActivityContainer>h1 {
+    background: var(--sub-color) !important;
+    font-family: var(--header-font);
+    color: black !important;
+    border: 1px inset var(--sub-color);
+    border-radius: 5px;
+    box-shadow: rgba(49, 49, 49, 0.445) 0px 2px 10px 5px;
+    background: rgb(245, 245, 245);
+    padding: 4px;
+    margin: 20px 0px 30px 0;
+    font-size: 30px;
+}
+
+#itemAmount { 
+    color: black;
+    background: silver;
+}
+
+.helpContainer {
+    position: absolute !important;
+    right: 0;
+    top: 145px;
+    width: 25px;
+    height: 50px;
+    background: white;
+    border: 1px outset silver;
+    border-radius: 5px 0 0 5px;
+    z-index: 1;
+    transition: .4s ease-in;
+    overflow: hidden;
+    animation: tabMovement 1s;
+    animation-delay: 2.5s;
+}
+
+.helpContainer:hover {
+    width: 165px;
+    cursor: pointer;
+}
+
+.helpContainer i{
+    display: inline;
+    padding: 15px 5px;
+    font-size: 20px;
+    color: rgb(53, 53, 53);
+}
+
+.financialContainer {
+    position: absolute !important;
+    right: 0;
+    top: 185px;
+    width: 25px;
+    height: 50px;
+    background: white;
+    border: 1px outset silver;
+    border-radius: 5px 0 0 5px;
+    z-index: 1;
+    transition: .4s ease-in;
+    overflow: hidden;
+    animation: tabMovement 1s;
+    animation-delay: 3s;
+}
+
+.financialContainer:hover {
+    width: 270px;
+    cursor: pointer;
+}
+
+.financialContainer i{
+    padding: 13px 6px;
+    font-size: 23px;
+    color: rgb(53, 53, 53);
+}
+
+@keyframes tabMovement {
+    0% {width: 25px;}
+    60% {width: 100px;}
+    100% {width: 25px;}
+  }
+
+
+
+
+
+@media only screen and (min-width: 1200px) {
+    .container-fluid {
+      width: 75% !important;
+    }
+  }
+
+@media only screen and (max-width: 575px) {
+    #budget {
+      margin: 20px 60px 10px 70px !important;
+    }
+  }
+
+@media only screen and (max-width: 450px) {
+    #budget {
+        width: 150px;
+      margin: 20px 10px 10px 10px !important;
+    }
+  }

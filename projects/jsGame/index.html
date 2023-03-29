@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link href="https://fonts.googleapis.com/css?family=Lacquer|Trade+Winds&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body id="backGround">
+        <audio loop id="audio1" src="sounds/forestChallengeMusic.mp3"></audio>
+        <audio loop id="audio2" src="sounds/forestBattle.mp3"></audio>
+        <audio id="audio3" src="sounds/enemyRoar.mp3"></audio>
+        <audio id="audio4" src="sounds/attack.mp3"></audio>
+        <audio id="audio5" src="sounds/fightWon.mp3"></audio>
+        <audio loop id="audio6" src="sounds/forestFinalBattleIntro.mp3"></audio>
+        <audio loop id="audio7" src="sounds/forestFinalBattle.mp3"></audio>
+        
+        <div class="instructions">
+            <i class="fas fa-times" onclick="closeInstructions()"></i>
+            <h1>A Javascript RPG Project</h1>
+            <p>Welcome! After submitting your name, simply progress through the forest and combat enemies with the large icons on the bottom of the game screen. As of now there is only one area to escape, but there will be many challenges along the way.<br><br><b>TIP:</b> your health is fully restored after leveling up. So don't fear a good fight!</p>
+        </div>
+
+        <div id="playArea" class="playArea">    
+            <img id="placeHolder" src="/jsGame/img/cardPlaceholder.jpg" alt="">
+            <img id=wolf class="elementAnimation" src="/jsGame/img/wolf.jpg" alt="" style="filter: grayscale(60%);">
+            <img id=beetle class="elementAnimation" src="/jsGame/img/beetle.jpg" alt="" style="filter: grayscale(70%);">
+            <img id=snake class="elementAnimation" src="/jsGame/img/snake.jpg" alt="" style="filter: grayscale(60%);">
+            <img id=spiderSmall class="elementAnimation" src="/jsGame/img/spiderSmall.jpg" alt="" style="filter: grayscale(50%);">
+            <img id=beaver class="elementAnimation" src="/jsGame/img/beaver.jpg" alt="" style="filter: grayscale(65%);">
+            <img id=mushroom class="elementAnimation" src="/jsGame/img/mushroom.jpg" alt="" style="filter: grayscale(60%);">
+            <img id=plant class="elementAnimation" src="/jsGame/img/plant.jpg" alt="" style="filter: grayscale(60%) blur(.5px);">
+            <img id=spiderQueen class="elementAnimation" src="/jsGame/img/spiderQueen.jpg" alt="" style="filter: grayscale(70%);">
+            <img id=wizard class="elementAnimation" src="/jsGame/img/wizard.jpg" alt="" style="filter: grayscale(60%)">
+            <img id=forestPic src="/jsGame/img/forest.jpg" alt="" style="filter: grayscale(60%);">
+            
+            <div id="toggleBackground">
+                <i onclick="topBoxToggle();" class="far fa-eye"></i>
+            </div>
+
+            <div class="inventoryContainer" id="inventoryAnimateIn" id="inventoryAnimateOut">
+                <img id="inventoryBackground" src="/jsGame/img/inventoryBackground.png" alt="">
+                <i onclick="inventoryToggleOut();" id="inventoryToggleButton" class="far fa-times-circle"></i>
+
+                <table id="inventoryItems">
+                    <tr>
+                      <th colspan="3" >Abilities</thcolspan="2">
+                    </tr>
+                    <tr>
+                      <td><i onclick="combatSequence(player.abilities.heal.name);" id="heal" class="fas fa-heartbeat" style= "display: none"></i></td>
+                      <td id="healDescription"></td>
+                    </tr>
+                    <tr>
+                        <td id="smallerColumn"><i id="berzerk" class="far fa-angry" style= "display: none"></i></td>
+                        <td id="longerColumn"></td>
+                    </tr>
+                    <tr>
+                        <td id="smallerColumn"><i id="meteor" class="fas fa-meteor" style= "display: none"></i></td>
+                        <td id="longerColumn"></td>
+                    </tr>
+                  </table>
+
+
+            </div>
+
+            <div class="topBox" id="player">
+                <i id="face" class="far fa-smile-beam"></i>
+                <h1 id="playerName"></h1>
+
+                <span id="playerSubmit">
+                <input type="text" id="nameField" placeholder="Who's Playing?"><button onclick="changeName()">Submit</button>
+                </span>
+                <br>
+                <span id="playerInfo">
+                <h2>Lvl: </h2><h2 id="levelInfo">???</h2>
+                <h2 id="textSpace">HP: </h2><h2 id="healthInfo">???</h2>
+                <h2 id="textSpace">Str: </h2><h2 id="strengthInfo">???</h2>
+                <h2 id="textSpace">AP: </h2><h2 id="attackPointsInfo">???</h2>
+                <div class="playerLevelProgressContainer">
+                <h2>Experience</h2>
+                <div id="playerProgressInfo"></div>
+                    </div>
+                </span>
+
+                <div id="location">
+                <h1 id="playerName"></h1>
+                <br>
+                <div id="settingInfo">
+                <h2>Location: </h2><h2 id="locationInfo">???</h2>
+                <div class="levelProgressContainer">
+                <h2>Location Progress</h2>
+                <div id="progressInfo"></div>
+                </div>
+                </div>
+                </div>
+        </div>
+        
+
+        <div class="dialogBox" id="dialogBox">
+            <div id="dialog">
+                <p></p>
+            </div>
+        </div>
+        
+        <div class="commandBoxAlways">
+        </div>
+
+        <div class="initialNextBox" id="initialNextIcons">
+            <i onclick="section1.firstChallenge();" id="upArrow" class="fas fa-arrow-up"></i>
+        </div>
+
+        <div class="nextBox" id="nextIcons">
+            <i onclick="checkLevelProgress();" id="upArrow" class="fas fa-arrow-up"></i>
+        </div>
+
+        <div class="nextLevelBox" id="nextLevelIcons">
+            <i onclick="" id="upArrow" class="fas fa-arrow-up"></i>
+        </div>
+
+        <div class="commandBox" id="commandIcons">
+            <i id="forward" class="fas fa-arrow-up"></i>
+            <i id="run" class="fas fa-running"></i>
+        </div>
+
+        <div class="combatBox" id="combatIcons">
+            <i onclick="inventoryToggleIn();" id="inventory" class="fas fa-qrcode"></i>
+            <i onclick="combatSequence();" id="attack" class="fas fa-hand-rock"></i>
+            <i id="runAway" class="fas fa-running"></i>
+        </div>
+
+    </div>
+    
+
+
+
+
+<script src="app.js"></script>
+</body>
+</html>

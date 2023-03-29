@@ -1,0 +1,545 @@
+{
+    "list": [
+        {"name": "Hand-Held Magnifiers",
+        "listProducts": [
+                {
+                    "name": "PowerMag",
+                    "description": "The Optelec PowerMag+ Bright White LED Magnifier is fitted with a bright white LED, providing consistent high-contrast lighting and a wide field of view. Made with high-quality German optics by Schweizer, the aspheric lightweight magnifying lens is scratch-resistant and provides an accurate, sharply defined image. PowerMag+ magnifiers have been engineered for low energy consumption and long-lasting battery life. The user-friendly battery compartment was designed with an easy-slide ergonomic switch and attached cover that cannot be lost, great for those with limited dexterity.",
+                    "image": "img/Mags/9504W.jpg",
+                    "detailList": [
+                        {"item":"Standard light-emitting diode (LED) illumination"},
+                        {"item":"7750K light temperature produces a bright, clear light"},
+                        {"item":"Superior German optics by Schweizer, for an accurate, sharply defined image"},
+                        {"item":"Aspheric lightweight scratch-resistant acrylic magnifying lens"},
+                        {"item":"Easy-slide switch eliminates flickering light"},
+                        {"item":"Permanently attached hinged battery cover"}
+                    ]
+                },
+                {
+                    "name": "Schweizer Okolux",
+                    "description": "The Schweizer OKOLUX Plus Mobil handheld magnifier features SMD LED lighting provides a bright, evenly-dispersed and high contrast light. The aspheric lightweight magnifying lens is made of acrylic, scratch-resistant glass. The lens provides a sharply defined, clear image that is further enhanced by the SMD LED lighting. The OKOLUX Plus Mobil line of handheld magnifiers have been engineered for low energy consumption and a long-lasting battery life. The battery compartment was designed for easy battery replacement.",
+                    "image": "img/Mags/58073.jpg",
+                    "detailList": [
+                        {"item":"Four chip surface-mounted light-emitting diode SMD LED illumination"},
+                        {"item":"4500K light temperature produces a very bright, evenly dispersed white clear light"},
+                        {"item":"Aspheric lightweight magnifying lens provides a sharply defined image"},
+                        {"item":"Easy-slide switch eliminates flickering light"},
+                        {"item":"Permanently attached hinged battery cover"}
+                    ]
+                },
+                {
+                    "name": "ERGO-Lux iMobil",
+                    "description": "Schweizer ERGO-Lux iMobil–the lifestyle magnifier features inductive charging. In addition to two brightness levels, the key advantage of this new magnifier lies in its wireless charging capability, which eliminates the need to replace batteries. Made with high-quality German optics by Schweizer, this aspheric, lightweight magnifying lens is scratch-resistant, and provides an accurate, sharply-defined image. The SMD LED light provides a bright, evenly dispersed and high contrast light. The ergonomic design places emphasis on comfort and ease of use by using a rubberized grip for the thumb and forefinger and a larger, rounded handle to support the ball of the hand. The easy-glide switch provides audible and tactile feedback and eliminates flickering.",
+                    "image": "img/Mags/5845i.jpg",
+                    "detailList": [
+                        {"item":"Wireless charging–no battery replacement, no cable inserted into the magnifier"},
+                        {"item":"6500K light temperature produces a very bright, evenly dispersed white light"},
+                        {"item":"Ergonomically designed handle to support the ball of the hand, and soft-touch zone with anti-slip guard for thumb and index finger"},
+                        {"item":"Two brightness levels available due to Multi-Power boost switch"},
+                        {"item":"Raised switch provides audible feedback"},
+                        {"item":"SMD LED light never needs replacing"},
+                        {"item":"Aspheric lightweight magnifying lens provides a sharply defined image"}
+                    ]
+                }
+            
+            ]
+        },
+        {"name": "Spectacles",
+        "listProducts": [
+                {
+                    "name": "PowerSpecs",
+                    "description": "Optelec's PowerSpecs line of spectacles are made with durable frames and superior optics. Refined in the USA, these spectacles include a two-year warranty and are delivered with a hard case.",
+                    "image": "img/spectacles/powerSpecs.jpg",
+                    "detailList": [
+                        {"item":"Affordable lenses with the highest abrasion/scratch resistance of any uncoated optical plastic."},
+                        {"item":"Prismatic spectacles that are ready to dispense and ideal for eccentric viewing"},
+                        {"item":"Comes in either a metal or plastic frame"},
+                        {"item":"Sizes available range from +4 OU to +12 OU (+12 only in metal)"}
+                    ]
+                },
+                {
+                    "name": "PowerShield",
+                    "description": "ImproVision ProShield Fit-Over and Wrap-Around absorptive spectacles are available in a variety of blue blocker filtered lenses. With 100% protection against UV-A, B, and C radiation, these spectacles offer the best in eye-protection with a comfortable fit. ",
+                    "image": "img/spectacles/absorptiveLense.jpg",
+                    "detailList": [
+                        {"item":"Four chip surface-mounted light-emitting diode SMD LED illumination"},
+                        {"item":"4500K light temperature produces a very bright, evenly dispersed white clear light"},
+                        {"item":"Aspheric lightweight magnifying lens provides a sharply defined image"},
+                        {"item":"Easy-slide switch eliminates flickering light"},
+                        {"item":"Permanently attached hinged battery cover"}
+                    ]
+                }
+            
+            ]
+        },
+        {"name": "Telescopes",
+        "listProducts": [
+                {
+                    "name": "PowerScope Handheld Monocular",
+                    "description": "The Optelec PowerScope Handheld Monocular Telescope provides exceptional brightness and remarkably crisp optics for those with low vision or increased viewing needs. The Keplerian handheld monocular is compact and lightweight, particularly useful at museums, sporting events and for reading signs. The focal barrel rotation is smooth and fluid, allowing you to easily set your ideal viewing distance. Due to the new design of the optics, the monocular telescope can be used for both distance and near focus viewing.",
+                    "image": "img/spectacles/powerscopeHandHeldMonocular.jpg",
+                    "detailList": [
+                        {"item":"Includes a protective case, detachable neck strap"},
+                        {"item":"Multiple options ranging from 2.5x to 10x"},
+                        {"item":"Comes with a limited-lifetime warranty"}
+                    ]
+                },
+                {
+                    "name": "Specwell Handheld Monocular",
+                    "description": "The Specwell Handheld Monocular Telescope features crisp optics in a sturdy housing case, with dual purpose optics that work well for both distance and near viewing capabilities. The optical quality lenses provide crisp and clear optics to see images in great detail and are great for outdoor use.",
+                    "image": "img/spectacles/specwellHandHeldMonocular.jpg",
+                    "detailList": [
+                        {"item":"Includes a protective case, detachable neck strap"},
+                        {"item":"Multiple options ranging from 3.8x to 10x"},
+                        {"item":"Comes with a limited one-year warranty"}
+                    ]
+                },
+                {
+                    "name": "Specwell Rubber Handheld Monocular",
+                    "description": "The Specwell Handheld Monocular Telescope features crisp optics in a protective rubber casing, with dual purpose optics that work well for both distance and near viewing capabilities. The optical quality lenses provide crisp and clear optics to see images in great detail, and are great for outdoor use.",
+                    "image": "img/spectacles/specwellRubberHandHeldMonocular.jpg",
+                    "detailList": [
+                        {"item":"Includes a protective case, detachable neck strap"},
+                        {"item":"Multiple options ranging from 8x to 10x"},
+                        {"item":"Comes with a limited one-year warranty"}
+                    ]
+                },
+                {
+                    "name": "PowerTV Binocular",
+                    "description": "Optelec PowerTV Binocular Glasses are lightweight and adjustable and provide 2X magnification, ideal for distance viewing. These comfortable glasses are perfect for watching television, movies, sporting events or other activities. Using a fully adjustable twin-lens design to set the desired viewing distance, the easy-to-use glasses will maximize the size of your television screen and provide complete enjoyment of multiple activities.",
+                    "image": "img/spectacles/PowerTVBinoculars.jpg",
+                    "detailList": [
+                        {"item":"Optimal focal distance of 4 ft"},
+                        {"item":"Weighs only 2.5oz"},
+                        {"item":"Includes protective carrying case"},
+                        {"item":"Includes a limited one-year warranty"}
+                    ]
+                },
+                {
+                    "name": "Power Series Binoculars",
+                    "description": "Optelec PowerSeries 2.8X Spectacle Binoculars are perfect for watching television, movies, sporting events or other outdoor activities. Using a binocular telescope system, the Optelec PowerSeries Spectacle Binoculars help to maximize the size of the television screen and other objects. The telescope binoculars can easily adjust and the hands-free frame allows for complete enjoyment of multiple activities.",
+                    "image": "img/spectacles/powerSeriesBinoculars.jpg",
+                    "detailList": [
+                        {"item":"Includes a limited-lifetime warranty"},
+                        {"item":"Optelec PowerSeries 2.8X Spectacle Binoculars should not be used while operating a motor vehicle"}
+                    ]
+                }
+                
+            
+            ]
+        },
+        {"name": "Desktop Video Magnifiers",
+        "listProducts": [
+                {
+                    "name": "Topaz EZ HD",
+                    "description": "Brilliant Magnified Images with Easy-to-Use Controls. TOPAZ EZ HD is simply uncomplicated magnification. This economical video magnifier emphasizes ease of use with single-function controls and a high-definition camera. The HD camera provides superior image quality, a wider field of view, and a lower magnification range.",
+                    "image": "img/videoMags/topazEzHd.jpg",
+                    "detailList": [
+                        {"item":"Magnification to 64 times (on a 24-inch monitor)"},
+                        {"item":"Choice of monitor sizes: widescreen 20-inch or 24-inch"},
+                        {"item":"Custom high-contrast color modes"},
+                        {"item":"Color-boost contrast"},
+                        {"item":"Brightly-colored control buttons"},
+                        {"item":"Over 8 inches of working space to write and work comfortably"},
+                        {"item":"Comfortable swivel screen"},
+                        {"item":"LED lighting reduces glare"},
+                        {"item":"One-touch button to freeze images"}
+                    ]
+                },
+                {
+                    "name": "Topaz HD",
+                    "description": "The TOPAZ HD video magnifier is the perfect choice for reading and performing daily tasks, with a wide magnification range, gliding reading table, lots of workspace under the camera, LED lighting, and unique features like Find and Freeze Frame.",
+                    "image": "img/videoMags/topazHD.jpg",
+                    "detailList": [
+                        {"item":"Magnification to 64 times (on a 24-inch monitor)"},
+                        {"item":"Choice of widescreen 20-inch, 22-inch, or 24-inch monitor"},
+                        {"item":"Auto-focus camera"},
+                        {"item":"Accurate colors and even illumination with no glare to minimize fatigue"},
+                        {"item":"33 screen color modes including high-contrast full color, true-color, and grayscale to fit your viewing needs"},
+                        {"item":"Over 8 inches of working space to write and work comfortably"},
+                        {"item":"Unique can and bottle holder holds round objects steady"},
+                        {"item":"Extra-wide reading table to smoothly glide large books and objects under the camera"}
+                    ]
+                },
+                {
+                    "name": "Topaz XL HD",
+                    "description": "The ultimate desktop video magnifier, TOPAZ XL HD provides high-definition magnification with the sharpest image and the crispest text, allowing for low magnification levels that fit more text on the screen for faster reading and better comprehension with less fatigue. With its extra features and computer connectivity, TOPAZ XL HD is the video magnifier of choice for those looking for maximum productivity in work and school environments.",
+                    "image": "img/videoMags/topazXlHd.jpg",
+                    "detailList": [
+                        {"item":"All the features of our standard TOPAZ HD and TOPAZ EZ HD models PLUS…"},
+                        {"item":"High-definition camera to provide a crisp image that is easy to read at all magnification levels"},
+                        {"item":"1080p resolution"},
+                        {"item":"Widest field of view to fit more text on the screen at once, for greater productivity with less fatigue"},
+                        {"item":"Position Locator to pinpoint the area you see on the monitor"},
+                        {"item":"Use with GEM® and OpenBook® Scanning and Reading Software to send the image from TOPAZ XL HD to your computer to read it aloud"}
+                        
+                    ]
+                },
+                {
+                    "name": "ClearView C Flex HD Speech",
+                    "description": "The new Optelec ClearView C Flex with Speech is a unique space saving desktop video magnifier that is designed to improve your reading experience. Select your preferred reading voice and sit back, relax, and listen to documents as they are read aloud. Combining a clear voice with magnification or high contrast makes reading so much easier.",
+                    "image": "img/videoMags/clearViewCFlex.jpg",
+                    "detailList": [
+                        {"item":"Continuous magnification: 1.5X – 75X (optional: up to 170X)(On a 24 Inch Monitor)"},
+                        {"item":"Superior High Definition 1080p video processing for ultra sharp and vivid images"},
+                        {"item":"Point and Read functionality: intuitive touch interface"},
+                        {"item":"Over 60 reading voices in 30 languages"},
+                        {"item":"Saving and opening documents on a SD card or USB stick"},
+                        {"item":"Optional: easy-glide reading table with X and Y directional movement (see ‘Accessories’)"},
+                        {"item":"Integrated lighting for even illumination, and elimination of reflections when reading glossy documents"}
+                    ]
+                }
+                
+            ]
+        },
+        {"name": "Transportable Video Magnifiers",
+            "listProducts": [
+                    {
+                        "name": "TOPAZ® PHD",
+                        "description": "The lightweight TOPAZ® PHD offers the comfort and productivity features of a desktop video magnifier but folds away like a laptop. With auto-focus, a wide magnification range, intuitive controls, six default and 27 customizable high-contrast color modes, and adjustable reading lines and masks, the new TOPAZ PHD offers the freedom to independently read and view the details that matter in the home, office, classroom, or on the go.",
+                        "image": "img/videoMags/TOPAZPHD.jpg",
+                        "detailList": [
+                            {"item":"Brilliant image quality that is easy to read at all magnification levels with magnification to 31 times (on a 15-inch monitor; up to 24 times on a 12-inch monitor)"},
+                            {"item":"Lightweight, collapsible, portable design"},
+                            {"item":"Choice of monitor sizes: 12-inch or 15-inch"},
+                            {"item":"Auto-focus camera"},
+                            {"item":"Six default and 27 configurable screen color modes for a total of 33"},
+                            {"item":"Document reading and self-viewing modes"},
+                            {"item":"Over 9 inches of working space to write and work comfortably"},
+                            {"item":"Adjustable reference lines and masks to easily keep your place and reduce glare"},
+                            {"item":"Find function to quickly zoom out, locate the next area of interest, and zoom back in"},
+                            {"item":"SD Card slot to quickly store images"},
+                            {"item":"USB PC connectivity when used with GEM® software"}
+                        ]
+                    },
+                    {
+                        "name": "ClearView GO",
+                        "description": "ClearView GO offers the same reading comfort, ease of use, and functionality as a desktop video magnifier, but in a compact and foldable design. It is the ideal solution for people who need magnification at different locations. With ClearView GO, you can comfortably read text and view objects, at home, office, classroom, or on the go. Its foldable design makes it extremely easy to take the ClearView GO with you or to store it when you do not need it.",
+                        "image": "img/videoMags/clearviewGO.jpg",
+                        "detailList": [
+                            {"item":"Full HD – 1080p with autofocus"},
+                            {"item":"Magnificaton range from 2.0x to 32x"},
+                            {"item":"Snapshot mode up to 170x"},
+                            {"item":"Large 15.6” screen that easily folds away"},
+                            {"item":"Read down pages without moving reading material thanks to the moveable camera"},
+                            {"item":"Connect to TV screen for even bigger image with HDMI"},
+                            {"item":"Lightweight: 10.36 lbs / 4.7 kg"},
+                            {"item":"Carrying case included"}
+                        ]
+                    }
+                ]
+            },
+        {"name": "Hand-held Video Magnifiers",
+            "listProducts": [
+                    {
+                        "name": "Ruby",
+                        "description": "Our smallest rechargeable battery-powered handheld video magnifier yet, with powerful magnification and brightly lit four-inch screen. Outstanding for reading bills, letters, checks, and receipts. Small and unobtrusive - easily slips into a pocket or purse for visiting the grocery store, the pharmacy, the bank, the library, bookstore, restaurant, or anywhere else.",
+                        "image": "img/videoMags/ruby.jpg",
+                        "detailList": [
+                            {"item":"Folding handle that can magnify as you would with a magnifying glass, or fold the handle and lay the RUBY flat on a page."},
+                            {"item":"Magnification 2x to 14x with handle extended"},
+                            {"item":"Magnification of 5x to 10x flat on the paper"},
+                            {"item":"Simple to operate. Turns on with one button, zooms in or out with one button. No technical experience needed."},
+                            {"item":"Uses 4 AAA rechargeable batteries - 2 hours continuous use; 2 hour charge time (also works with disposable batteries)"},
+                            {"item":"Weighs only 7.7 ounces"},
+                            {"item":"Carrying case included"}
+                        ]
+                    },
+                    {
+                        "name": "Ruby HD",
+                        "description": "This handheld video magnifier blends portability with advanced features, with a high-definition camera for crystal-clear images. Perfect for restaurant menus, photographs, prescription labels, items at the grocery store, and much more. Hold it as you would a magnifying glass using the folding handle, or lay the RUBY HD flat on a page for hands-free viewing.",
+                        "image": "img/videoMags/rubyHD.jpg",
+                        "detailList": [
+                            {"item":"4.3-inch widescreen LCD"},
+                            {"item":"2x -13x continuous zoom"},
+                            {"item":"Fast reading with no distortion"},
+                            {"item":"Lightweight design at only 8 oz."},
+                            {"item":"2 hour in-use battery life - uses rechargeable or disposable AAA batteries"},
+                            {"item":"20 high-contrast color viewing modes"},
+                            {"item":"Built-in LED lighting"},
+                            {"item":"Freeze Frame with adjustable magnification"},
+                            {"item":"Slide Show mode"},
+                            {"item":"Save up to 80 images and send to computer with USB"},
+                            {"item":"Universal Power Supply with Multiple Connectors"}
+                        ]
+                    },
+                    {
+                        "name": "Ruby XL HD",
+                        "description": "This portable, handheld video magnifier has a 5-megapixel, auto-focus camera providing sharp HD quality images that are easily viewed on its full color, 5-inch LCD screen. The screen tilts up for easy reading on the page with continuous zoom from 2x to 14x. There is a convenient flip-out handle for spot viewing.",
+                        "image": "img/videoMags/rubyXLHD.jpg",
+                        "detailList": [
+                            {"item":"5-inch widescreen LCD"},
+                            {"item":"2x -14x continuous zoom"},
+                            {"item":"Built-in reading stand"},
+                            {"item":"Easy flip-out handle"},
+                            {"item":"Fast reading with no blur"},
+                            {"item":"Lightweight design at 10.5 oz."},
+                            {"item":"3 hours continuous use"},
+                            {"item":"20 high-contrast color viewing modes"},
+                            {"item":"Freeze Frame with adjustable magnification"},
+                            {"item":"Save up to 80 images and send to computer with USB"},
+                            {"item":"Reading Line and Masks"},
+                            {"item":"Universal Power Supply with Multiple Connectors"}
+                        ]
+                    },
+                    {
+                        "name": "Ruby 7 HD",
+                        "description": "RUBY® 7 HD is a lightweight, handheld video magnifier that can magnify an object from two to 24 times its size. It features PivotCam™ – a 5-megapixel, auto-focus camera that easily rotates through a wide range of viewing modes: reading, hobby, distance, self-view, and spotting. The camera provides sharp HD quality images that are easily viewed on its full color, 7-inch LCD screen.",
+                        "image": "img/videoMags/ruby7HD.png",
+                        "detailList": [
+                            {"item":"2x - 24x continuous zoom"},
+                            {"item":"Large, 7-inch widescreen LCD"},
+                            {"item":"Built-in reading stand"},
+                            {"item":"Large and easy-to-use buttons"},
+                            {"item":"20 high-contrast colors"},
+                            {"item":"Freeze Frame"},
+                            {"item":"Reading Line and Masks"},
+                            {"item":"Full size HDMI port"},
+                            {"item":"4 hours continuous use"},
+                            {"item":"Lightweight - 18 oz./510 g"},
+                            {"item":"Save up to 105 images"},
+                            {"item":"PivotCam™ Rotating Camera"},
+                            {"item":"Panning button for still images"}
+                        ]
+                    },
+                    {
+                        "name": "Compact 6 HD",
+                        "description": "The Compact 6 HD is more than just another electronic magnifier. Being only 14 mm thin, it is a pocket-sized, 6-inch touch screen magnifier that you can use at your desk, at a store, at home, at school, or at the office. You can read magnified text in high contrast colors and view objects from a small distance. Thanks to its large 6-inch screen, you can fit more text on the screen for maximum overview. Ready to use within a second, the Compact 6 HD magnifies instantly after you turn it on.",
+                        "image": "img/videoMags/compact6HD.jpg",
+                        "detailList": [
+                            {"item":"Small and pocket-sized design"},
+                            {"item":"Easy to hold thanks to the ergonomically designed side grips"},
+                            {"item":"Large 6-inch high brightness touch screen"},
+                            {"item":"Continuous zoom: <0.5 to >21 times magnification"},
+                            {"item":"2 High Definition auto-focus cameras for reading and viewing objects and photographs"},
+                            {"item":"High contrast semi-colors for easier reading"},
+                            {"item":"Reversible USB C connector for charging"},
+                            {"item":"Rechargeable battery offering an average of 3 hours continuous use"},
+                            {"item":"Dimensions: 183 x 95 x 14 mm / 7.2 x 3.7 x 0.55 in"},
+                            {"item":"Weight Compact 6 HD 270 grams / 9.5 ounces"},
+                            {"item":"Weight Reading Stand 110 grams / 3.0 ounces"}
+                        ]
+                    },
+                    {
+                        "name": "Compact 7 HD",
+                        "description": "The high contrast widescreen provides an increased field of view and the ability to see even more of the material compared to traditional portable magnifiers. You can rely on the ultra sharp High Definition and Auto-Focus camera with a patented LED lighting system for even, glare-free illumination to deliver the best available image quality. Reading newspapers, letters or viewing photos anywhere at home, in the office, at school or while traveling is easier than ever!",
+                        "image": "img/videoMags/compact7HD.jpg",
+                        "detailList": [
+                            {"item":"Continuous magnification of 2.5X - 30X"},
+                            {"item":"7-inch High Definition full color TFT widescreen display"},
+                            {"item":"Immediate reading with “one-touch” to open and power on"},
+                            {"item":"5-hour continuous use rechargeable battery; large icon battery status"},
+                            {"item":"Patented indirect camera LED lighting system for even, glare-free illumination"},
+                            {"item":"8-megapixel High Definition and Auto-Focus camera"},
+                            {"item":"Large icon settings and information menu to save user settings"},
+                            {"item":"Adjustable brightness with full color photo mode and 16 high contrast color combinations"},
+                            {"item":"Two reading positions"},
+                            {"item":"Snapshot function with audio indication sounds"},
+                            {"item":"Save up to 75 captured images"},
+                            {"item":"Carrying case, wrist strap and a microfiber screen cleaning cloth"},
+                            {"item":"Portable and lightweight at only 1.4lbs (22.6 oz.)"},
+                            {"item":"Dimensions: 7.5 x 5.1 x 1.1 inches"},
+                            {"item":"2-year standard warranty"}
+                        ]
+                    },
+                    {
+                        "name": "Compact 10 HD",
+                        "description": "The Compact 10 HD Speech is an ideal solution to magnify and read newspapers, letters, and magazines. But, its unique swing-out arm opens a whole new range of possibilities. It effortlessly captures full-page documents and reads them to you. The convenient indicator at the foot of the Compact 10 HD Speech tells you exactly where to place the document you want to read. Just place the document, take a snapshot, and relax while the Compact 10 HD Speech reads text to you.",
+                        "image": "img/videoMags/compact10HD.jpg",
+                        "detailList": [
+                            {"item":"Text-to-Speech: listen as the Compact 10 HD Speech reads full pages of text to you"},
+                            {"item":"Instant on – ready when you need it"},
+                            {"item":"Large 10-inch high brightness touch screen"},
+                            {"item":"Continuous zoom: <0.5x to >22x times magnification"},
+                            {"item":"3 High Definition 13MP auto-focus cameras for Reading, Full Page and Overview"},
+                            {"item":"High contrast semi-colors for easier reading"},
+                            {"item":"Reversible USB C connector for charging"},
+                            {"item":"Rechargeable battery offering approximately 3.5 hours continuous use"},
+                            {"item":"Dimensions: 261 x 189 x 36 mm / 10.28 x 7.44 x 1.42 in"},
+                            {"item":"Weight: 915 grams / 2.02 lb"}
+                        ]
+                    }
+                ]
+            },
+        {"name": "Scanning and Reading Solutions",
+            "listProducts": [
+                    {
+                        "name": "omniReader",
+                        "description": "The omniReader® reads printed text to you by pressing a single button. You can follow the magnified text in high-contrast colors on the built-in screen, or simply listen as the omniReader reads text out loud. You can also use the screen to instantly magnify objects and see them more clearly. Thanks to its lightweight design, built-in handle, and long battery life, you can pick it up and use it wherever you want – at home, at the office, and even on the go.",
+                        "image": "img/scanningAndReading/omniReader.jpg",
+                        "detailList": [
+                            {"item":"Accurately and instantly read and magnify text"},
+                            {"item":"Large, easy-to-use controls with profiles for low vision and blind users"},
+                            {"item":"Portable, and lightweight – ideal to take with you"},
+                            {"item":"Connect a headset to listen to documents privately"},
+                            {"item":"Magnify small objects and fine print in Live Viewing Mode"},
+                            {"item":"Scan and read documents in portrait orientation"},
+                            {"item":"Save multi-page documents"},
+                            {"item":"Read from and save to a USB thumb drive"},
+                            {"item":"Scan material in 17 different languages and listen with multiple human-sounding voices"}
+                        ]
+                    },
+                    {
+                        "name": "Pearl",
+                        "description": "The PEARL, combined with the latest versions of JAWS, Fusion, or OpenBook scanning and reading software, brings blind and low vision users instant portable access to printed material with an array of human-sounding voices. The folding camera deploys in seconds to connect to your PC and snap a picture of your reading material and begins reading it aloud instantly.",
+                        "image": "img/scanningAndReading/pearl.jpg",
+                        "detailList": [
+                            {"item":"Plug and Play USB with  the latest versions of JAWS, Fusion, and OpenBook"},
+                            {"item":"Motion Sensor to detect new pages for Multi-Page scanning"},
+                            {"item":"Built-in LED lighting for dim settings"},
+                            {"item":"Scan 20 pages per minute while reading"},
+                            {"item":"Add comments and highlighting to scanned text"},
+                            {"item":"OpenBook scanning identifies columns and places them in logical reading order"},
+                            {"item":"Saves in many formats including BRL or even Audio"},
+                            {"item":"Export to other applications like Microsoft® Word or Notepad"},
+                            {"item":"Your product includes a two-year warranty against manufacturing defects"}
+                        ]
+                    },
+                    {
+                        "name": "Eye-Pal SOLO",
+                        "description": "Eye-Pal SOLO™ is a stand-alone scanning and reading appliance with OCR and read-aloud capabilities. It scans up to 20 pages per minute and reads text nearly instantaneously, allowing you to work quickly without frustration. Eye-Pal SOLO easily and accurately reads printed material from books, newspapers, magazines, mail, cookbooks, and more - without the need of a computer.",
+                        "image": "img/scanningAndReading/eyePalSolo.jpg",
+                        "detailList": [
+                            {"item":"Easy to set up and use – no computer required"},
+                            {"item":"Converts printed text to natural, human-sounding speech"},
+                            {"item":"Automatically and accurately reads printed material"},
+                            {"item":"Hand-motion activated"},
+                            {"item":"Scans 20 pages per minute"},
+                            {"item":"Saves documents in Text or MP3 file format"},
+                            {"item":"Lightweight and space saving: weighs under 7 lbs. and is only 9” W x 11” L"}
+                        ]
+                    },
+                    {
+                        "name": "ClearReader+",
+                        "description": "Rediscover the joy of reading anytime and anywhere. Within a few seconds, the ClearReader+ scans any magazine articles and reads them to you in naturally sounding voices. The  ClearReader+ is designed for simplicity. Its buttons are easy to operate and have distinctive shapes. This helps you to control the integrated state-of-the-art technology without any effort. It offers a broad variety of high quality male and female reading voices in 31 different languages. Select your preferred voices and languages and switch them instantly while reading.",
+                        "image": "img/scanningAndReading/clearReader.jpg",
+                        "detailList": [
+                            {"item":"High resolution auto-focus camera with state of the art wide angle optics"},
+                            {"item":"59 high quality, easy-to-change reading voices (TTS) - 31 supported languages"},
+                            {"item":"Built-in stereo speakers with volume and speed control"},
+                            {"item":"Headphone, HDMI, USB and SD Card Ports"},
+                            {"item":"Integrated rechargeable Li-ion battery: offering 5 hours continuous use"},
+                            {"item":"Integrated LED lighting for even illumination"},
+                            {"item":"Foldable carrying handle"},
+                            {"item":"Dimensions: 23 x 24 x 10 cm / 9.1 x 9.4 x 3.9 in"},
+                            {"item":"Weight: 2.46 kg / 5.4 lb"}
+                        ]
+                    }
+                ]
+            },
+        {"name": "Braille Solutions",
+            "listProducts": [
+                    {
+                        "name": "Focus 14",
+                        "description": "The fifth generation Focus Braille Display is more rugged and stronger than ever. We’ve built the housing from aluminum and steel, added bumpers to absorb shock, and physically isolated the Braille cells to create a Braille display to meet the demands of the active user.",
+                        "image": "img/braille/focus14.jpg",
+                        "detailList": [
+                            {"item":"14 Braille cells, 8-dot Braille keyboard"},
+                            {"item":"Seamless Braille with a more crisp and uniform feel"},
+                            {"item":"Convenient front panel controls and customizable NAV rockers"},
+                            {"item":"Select your personal Braille firmness with VariBraille"},
+                            {"item":"Time and date display"},
+                            {"item":"Use the display without removing it from the protective carrying case"},
+                            {"item":"This product includes a two-year warranty against manufacturing defects."}
+                        ]
+                    },
+                    {
+                        "name": "Focus 40",
+                        "description": "This fifth generation of the Focus Braille Display line incorporates our vast knowledge base from manufacturing and servicing displays in the previous designs. The new housing is an aluminum extrusion on a steel base. Each Braille cell is physically isolated from its neighbors. The housing incorporates bumpers that absorb shock when the unit is dropped or knocked against a wall or door. The durable unit has been drop-tested to US Military Standard MIL-STD-810G. A single smooth cell cap covers the Braille, so you feel only the Braille pins, no seams. Special attention has been paid to the dot keys and spacebar to ensure smooth positive feedback and quiet operation. The Braille pins have been retooled to provide a crisper, more uniform feel that you’ll notice with your first reading.",
+                        "image": "img/braille/focus40.jpg",
+                        "detailList": [
+                            {"item":"40 Braille cells, 8-dot Braille keyboard"},
+                            {"item":"Smooth, paper-like feel"},
+                            {"item":"Convenient thumb key and panning buttons"},
+                            {"item":"Our exclusive NAV Rockers let you rapidly scroll by line, sentence, paragraph, or pan through a document"},
+                            {"item":"Menu button for quick access to settings"},
+                            {"item":"Adjustable key repeat for rapid scrolling and panning"},
+                            {"item":"Select your personal Braille firmness with VariBraille"},
+                            {"item":"Time and date display"},
+                            {"item":"This product includes a two-year warranty against manufacturing defects."}
+                        ]
+                    },
+                    {
+                        "name": "Focus 80",
+                        "description": "This fifth generation of the Focus Braille Display line incorporates our vast knowledge base from manufacturing and servicing displays in the previous designs. The new housing is an aluminum extrusion on a steel base. Each Braille cell is physically isolated from its neighbors. The housing incorporates bumpers that absorb shock when the unit is dropped or knocked against a wall or door. A single smooth cell cap covers the Braille, so you feel only the Braille pins, no seams. Special attention has been paid to the dot keys and spacebar to ensure smooth positive feedback and quiet operation. The Braille pins have been retooled to provide a crisper, more uniform feel that you’ll notice with your first reading.",
+                        "image": "img/braille/focus80.png",
+                        "detailList": [
+                            {"item":"80 Braille cells, 8-dot Braille keyboard"},
+                            {"item":"Smooth, paper-like feel"},
+                            {"item":"Convenient thumb key and panning buttons"},
+                            {"item":"Our exclusive NAV Rockers let you rapidly scroll by line, sentence, paragraph, or pan through a document"},
+                            {"item":"Menu button for quick access to settings"},
+                            {"item":"Adjustable key repeat for rapid scrolling and panning"},
+                            {"item":"Select your personal Braille firmness with VariBraille"},
+                            {"item":"This product includes a two-year warranty against manufacturing defects."}
+                        ]
+                    }
+                ]
+            },
+        {"name": "Software",
+            "listProducts": [
+                    {
+                        "name": "Jaws",
+                        "description": "JAWS, the world's most popular screen reader, is developed for computer users whose vision loss prevents them from seeing screen content or navigating with a mouse. JAWS enables users to use a computer by providing speech and Braille output for computer applications on your PC and enables individuals to use a computer independently.",
+                        "image": "img/software/jaws.jpg",
+                        "detailList": [
+                            {"item":"Offered in two license types:"},
+                            {"item":"Home: for personal, non-commercial use"},
+                            {"item":"Professional: for commercial use"},
+                            {"item":"Runs on all versions of the Windows® operating system"},
+                            {"item":"Includes free technical support and all same-version updates"}
+                        ]
+                    },
+                    {
+                        "name": "ZoomText",
+                        "description": "The most popular Screen Magnification software in the world for the vision impaired. ZoomText Magnifier/Reader is a fully integrated magnification and reading program tailored for low-vision users. Magnifier/Reader enlarges and enhances everything on your computer screen, echoes your typing and essential program activity, and automatically reads documents, web pages, and email.",
+                        "image": "img/software/zoomText.jpg",
+                        "detailList": [
+                            {"item":"Offered in two license types:"},
+                            {"item":"Home: for personal, non-commercial use"},
+                            {"item":"Professional: for commercial use"},
+                            {"item":"Runs on all versions of the Windows® operating system"},
+                            {"item":"Includes free technical support and all same-version updates"}
+                        ]
+                    },
+                    {
+                        "name": "Fusion",
+                        "description": "Fusion is the ultimate accessibility tool for individuals with any level of vision impairment. Fusion provides the best of both worlds – ZoomText, with its screen magnification and visual enhancements for screen viewing ease, coupled with the power and speed of JAWS for screen reading functionality. By blending ZoomText and JAWS together, Fusion has flexible, high-quality speech using Eloquence and Vocalizer Expressive, powerful keyboard access including navigation on the web, and a wide range of customization options. And with a Fusion license, you can choose to run either just ZoomText or JAWS by themselves or combined as Fusion. Three products in one!",
+                        "image": "img/software/fusion.jpg",
+                        "detailList": [
+                            {"item":"Offered in two license types:"},
+                            {"item":"Home: for personal, non-commercial use"},
+                            {"item":"Professional: for commercial use"},
+                            {"item":"Runs on all versions of the Windows® operating system"},
+                            {"item":"Includes free technical support and all same-version updates"}
+                        ]
+                    },
+                    {
+                        "name": "Openbook",
+                        "description": "OpenBook Software converts printed documents or graphic-based text into an electronic text format on your PC, reading it aloud with quality speech and the latest in accurate optical character recognition (OCR). OpenBook utilizes both Nuance OmniPage and ABBYY FineReader OCR engines to bring you the most accurate text recognition available. Use OpenBook to read books, magazines, and bills. OpenBook identifies columns and places them in logical reading order. Change the language setting to read foreign language documents with native speaker voices.",
+                        "image": "img/software/openBook.jpg",
+                        "detailList": [
+                            {"item":"Offered in two license types:"},
+                            {"item":"Home: for personal, non-commercial use"},
+                            {"item":"Professional: for commercial use"},
+                            {"item":"Runs on all versions of the Windows® operating system"},
+                            {"item":"Includes free technical support and all same-version updates"}
+                        ]
+                    }
+                ]
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ]
+}

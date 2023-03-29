@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Playfair+Display|Raleway|Rock+Salt|Sacramento|Shadows+Into+Light|Trade+Winds&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <title>Finance Organizer$</title>
+</head>
+<body>
+  <header id="main-header" class=" text-white p-3 pt-4 mb-3 border-bottom" style="border-bottom:2px solid rgb(49, 49, 49); transition: 1s;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 id="header-title" class="text-center"><strong>Finance Organizer$</strong></h1>
+        </div>
+        
+      </div>
+    </div>
+  </header>
+  
+  <div class="container-fluid">
+    <div id="main" style="transition: 1s;">
+      
+      <div class="d-flex flex-column justify-content-center border border-dark rounded p-2 pt-3 pl-3 mb-3" id="budgetContainer">
+        
+        <i class="far fa-minus-square" id="minimizeToggle1A"></i>
+        <i class="far fa-plus-square" id="minimizeToggle1B"></i>
+
+        <div class="budgetButtonContainer" style="display: none;">
+          <button type="button" class="btn btn-warning" id="changeBudget" style="width: 150px;">Change Budget</button>
+          <button type="button" class="btn btn-danger" id="newSession" style="width: 150px;">New Session</button>
+        </div>
+
+        <div class="badge badge-light text-wrap order-2" id="expensesTotal" style="display: none;">
+        <h1 class="badge badge-light text-wrap mb-0"></h1>
+        <div id="expenseBar"></div>
+      </div>
+      <!-- <h1 class="badge badge-light text-wrap order-2" id="expensesTotal" style="display: none;">Expenses: <span id="expenseBar"></span></h1> -->
+      <div class="badge badge-light text-wrap order-3" id="budgetDifference" style="display: none;">
+        <h1 class="badge badge-light text-wrap mb-0"></h1>
+        <div id="budgetBar"></div>
+      </div>
+      <form id="addBudget" class="d-flex justify-content-center form-inline">
+        <input type="text" maxlength="9" class="form-control mr-2 mt-2 w-30 p-2" id="budget" value="" placeholder="Budget Amount?">
+        <input type="submit" class="btn btn-success mt-2 border" id="submitBudget" value="Set Budget">
+      </form>
+    </div>
+    
+     <div class="border border-dark rounded p-3 mb-3" id="submitActivityContainer" style="display: none;">
+      <i class="far fa-minus-square" id="minimizeToggle2"></i>
+      <i class="far fa-plus-square" id="minimizeToggle2"></i>
+      <!-- <h1 class="title text-light pr-2 text-center">Submit Expense</h1> -->
+      <form id="addForm" class="d-flex justify-content-center form-inline">
+        <input type="text" maxlength="22" class="form-control mr-2 mt-2 w-60 p-2" id="item" value="" placeholder="Payment For?">
+        <input type="text" maxlength="9" class="form-control mr-2 mt-2 w-30 p-2" id="amount" value="" placeholder="Amount?">
+        <select class="form-control mr-2 mt-2" style="width:105px;" id="priority">
+          <option value="1">Paid</option>
+          <option value="2">Pending</option>
+          <option value="3">Unpaid</option>
+        </select>
+        <input type="submit" class="btn btn-success mt-2 border" value="Submit">
+      </form>
+    </div>
+    
+    <div class="border border-dark rounded p-3 mb-3" id="ActivityContainer" style="display: none;">
+      <!-- <i class="far fa-minus-square" id="minimizeToggle3"></i>
+        <i class="far fa-plus-square" id="minimizeToggle3"></i> -->
+        <h1 class="title text-light text-center"><strong>Expenses</strong></h1>
+        <select class="d-flex justify-content-center form-control mr-2 mb-2 mt-2" id="filter">
+          <option value="All">All</option>
+          <option value="Paid">Paid</option>
+          <option value="Pending">Pending</option>
+          <option value="Unpaid">Unpaid</option>
+        </select>
+        <ul id="items" class="list-group">
+          <!-- <li class="list-group-item p-2"><button class="btn btn-secondary btn-sm float-left mr-2"><i class="fas fa-arrows-alt" style="font-size:15px;color:white;"></i></button>Sample<button class="btn btn-danger btn-sm float-right delete">X</button></li> -->
+        </ul>
+        <div id="output"></div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="helpContainer bg-warning" onclick="helpToggle();">
+    <div class="d-flex">
+      <i class="fas fa-question"></i>
+      <h2><span class="badge badge-dark">App Help</span></h2>
+    </div>
+
+    <div class="flex-column justify-content-center" id="helpContent" style="display: flex; width: 80%; margin-left: auto; margin-right: auto;">
+
+      <div class="card d-flex" style="margin: 10px 0 20px 0;">
+        <img class="card-img-top" src="img/budget.JPG" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Set Budget</h5>
+          <p class="card-text">To get started, simply input the <strong>total</strong> budget. Have no fear, this can be adjusted at any point!</p>
+        </div>
+      </div>
+
+      <div class="card d-flex" style="margin: 10px 0 20px 0;">
+        <img class="card-img-top" src="img/changeBudget.JPG" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Change Budget & New Session</h5>
+          <p class="card-text"><li>Click <strong>Change Budget</strong> and enter the desired value. Click submit and the document will update.</li><li>This website stores the data you input into your local device's storage. To clear this data and start from scratch, click <strong>New Session</strong></li></p>
+        </div>
+      </div>
+    
+
+
+      <div class="card p-2" style="margin: 10px 0 20px 0;">
+        <img class="card-img-top" src="img/progressBar.JPG" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Budget vs Expenses</h5>
+          <p class="card-text">Here you'll find dynamic progression bars to compare your budget vs expense amounts. <br><br><strong>Note:</strong> This box can be minimized to save visual space</p>
+        </div>
+      </div>
+
+
+      <div class="card p-2" style="margin: 10px 0 20px 0;">
+        <img class="card-img-top" src="img/expenseList.JPG" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Expense List</h5>
+          <p class="card-text">Here you'll find the full list of expenses you've added.<br><br>
+            <li>Click the <strong>trash</strong> icon to delete<br></li>
+            <li>Click the <strong>status</strong> icon to toggle between Paid/Unpaid/Pending.</li>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="financialContainer bg-success" onclick="financeToggle();">
+    <div class="d-flex">
+      <i class="fas fa-dollar-sign"></i>
+      <h2><span class="badge badge-dark">Financial Guidance</span></h2>
+    </div>
+
+    <div class="flex-column justify-content-center" id="financeContent" style="display: flex; width: 80%; margin-left: auto; margin-right: auto;">
+
+      <div class="card d-flex" style="margin: 10px 0 20px 0;">
+        <img class="card-img-top" src="img/investopedia.JPG" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Investopedia</h5>
+          <p class="card-text">Investopedia's dictionary is great for finding easy-to-understand, comprehensive definitions of financial terms or concepts.It also provides tutorials on everything from income taxes to becoming a landlord. The site even features study guides for nationally administered finance exams.</p>
+          <a href="https://www.investopedia.com/" target="#" class="btn btn-primary">Visit Site</a>
+        </div>
+      </div>
+    
+
+
+      <div class="card p-2" style="margin: 10px 0 20px 0;">
+        <img class="card-img-top" src="img/wiseBread.JPG" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Wise Bread</h5>
+          <p class="card-text">Wise Bread refers to itself as "personal finance and frugal living forums." If you want to learn how to save money from everyday people, this is the place to go. Wise Bread writers share both their own experiences and tips.</p>
+          <a href="https://www.wisebread.com/" target="#" class="btn btn-primary">Visit Site</a>
+        </div>
+      </div>
+
+
+      <div class="card p-2" style="margin: 10px 0 20px 0;">
+        <img class="card-img-top" src="img/credit.JPG" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Credit.com</h5>
+          <p class="card-text">Creating a free account with Credit.com gives you access to your credit score, which has far-reaching effects on aspects of your life such as the interest rate you pay on loans and mortgages, and even the price you pay for insurance.</p>
+          <a href="https://www.credit.com/" target="#" class="btn btn-primary">Visit Site</a>
+        </div>
+      </div>
+
+      <div class="card p-2" style="margin: 10px 0 20px 0;">
+        <img class="card-img-top" src="img/quora.JPG" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Quora</h5>
+          <p class="card-text">Quora describes itself as "the best answer to any question," so next time you're struggling with a specific money issue, search Quora to see if anyone else has experienced the same struggle and provided a solution. You might also come across some unsolicited — but very helpful — money advice. </p>
+          <a href="https://www.quora.com/" target="#" class="btn btn-primary">Visit Site</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  
+  <script src="dom.js"></script>
+</body>
+</html>
