@@ -162,8 +162,8 @@ button:hover {
 .goalsQuote {
     flex: 0 1 900px;
     margin-bottom: 0;
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+
 }
 
 .goalsQuoteAuthor {
